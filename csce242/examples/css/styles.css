@@ -1,0 +1,44 @@
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:url("images/arctic-background.jpg");
+    background-size:cover;
+}
+
+/* Space between divs is margins, space within divs is padding */
+#content {
+    background:#699EBF;
+    width:70%;
+    margin:auto;    /* center */
+    padding:1%;     /* move text away from edge */
+    border-radius:5px;  /* round corners */
+}
+
+/* Tables */
+table {
+    border-collapse:collapse;
+}
+
+td, th {
+    border:1px solid black;
+    padding:5px 10px; /* Top and bottom 5, right and left 10 */
+}
+
+th {
+    background:#35648C;
+}
+
+/* Images */
+#seal-upclose {
+    width:50%;
+    box-shadow: 8px 8px #143F59; /* right, bottom; -left, -top; color */
+}
+
+/* Typography */
+h1 {
+    color:#BFA3B8;
+}
+
+h2 {
+    color:#D0D5D9;
+}

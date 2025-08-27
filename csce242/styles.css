@@ -1,0 +1,48 @@
+/* Structure */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:url(images/orange-bg.jpg);
+    background-size:cover;
+}
+
+#main {
+    background:#f2f0d5;
+    width:75%;
+    margin:auto;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    border-radius:7px;
+    box-shadow:8px 8px #4f4f4f;
+}
+
+/* Typography */
+h1 {
+    color:#f28b30;
+}
+
+h2 {
+    color:#f29b30;
+}
+
+p {
+    color:#f25050;
+}
+
+a {
+    text-decoration:none;
+}
+
+#repo {
+    color:#ffce39;
+    background:#ff7575eb;
+}
+
+#assignment1 {
+    color:#ffa5a5;
+}
+
+#assignment2 {
+    color:#ff5f5f;
+}
