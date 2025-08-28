@@ -1,0 +1,73 @@
+/* Structure */
+body {
+    background:url(images/beach-bg.jpg);
+    background-size:cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#content {
+    background:#ebcba4;
+    width:75%;
+    padding-top:0.5%;
+    padding-bottom:1.5%;
+    padding-left:2%;
+    padding-right:2%;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:-5px 5px 5px#424242;
+}
+
+/* Images */
+#umbrella {
+    border:3px solid #0367a6;
+    width:26.75%;
+    padding:5px;
+}
+
+#flip-flops {
+    border:3px solid #0367a6;
+    width:30%;
+    padding:5px;
+    margin-left:10px;
+}
+
+#toy {
+    border:3px solid #0367a6;
+    width:30%;
+    padding:5px;
+    margin-left:10px;
+}
+
+/* Table */
+table {
+    border-collapse:collapse;
+    margin:2% auto;
+}
+
+td, th {
+    border:1px solid #252601;
+    padding:5px 15px;
+    color:#403027;
+}
+
+th {
+    background:#6fa8bf;
+}
+
+/* Typography */
+h1 {
+    color:#049dd9;
+}
+
+h2 {
+    color:#f25c05;
+}
+
+p {
+    color:#384001;
+}
+
+a {
+    color:#44a694;
+    text-decoration:none;
+}
