@@ -1,13 +1,12 @@
 /* Structure */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background:url(images/orange-bg.jpg);
-    background-size:cover;
+    background:#f2bf27;
 }
 
-#main {
+#home {
     background:#f2f0d5;
-    width:75%;
+    width:90%;
     margin:auto;
     padding-left:2%;
     padding-right:2%;
@@ -17,32 +16,87 @@ body {
     box-shadow:8px 8px #4f4f4f;
 }
 
+#main-nav ul {
+    list-style-type:none;
+    margin:auto;
+}
+
+#main-nav li {
+    padding:10px;
+}
+
+#main-nav a {
+    color:#101010;
+}
+
+/* Flex */
+
+/* Larger devices */
+@media only screen and (min-width: 768px) {
+    body {
+        background:url(images/orange-bg.jpg);
+        background-size:cover;
+    }
+
+    #home {
+        width:80%;
+    }
+
+    #main-header h5 {
+        text-align:left;
+    }
+
+    #main-nav ul {
+        padding-left:0;
+    }
+
+    #main-nav a {
+        font-size:-15em;
+    }
+
+    .assignments {
+        margin-left:25px;
+        margin-bottom:0;
+    }
+
+    .columns {
+        display:flex;
+    }
+}
+
+/* Classes */
+.assignments {
+    background:#bdf26d;
+    width:75%;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.thumbnails {
+    width:70%;
+    padding-top:10px;
+}
+
 /* Typography */
-h1 {
+
+#main-header h1 {
+    text-align:center;
     color:#f28b30;
 }
 
-h2 {
-    color:#f29b30;
+#main-header h5 {
+    color:#f28b30;
 }
 
-p {
-    color:#f25050;
+#main-content h2 {
+    text-align:center;
 }
 
-a {
+#main-nav a {
+    margin-top:5px;
     text-decoration:none;
 }
 
-#repo {
-    color:#ffce39;
-    background:#ff7575eb;
-}
-
-#assignment1 {
-    color:#ffa5a5;
-}
-
-#assignment2 {
-    color:#ff5f5f;
+#main-nav p {
+    font-size:75%;
 }

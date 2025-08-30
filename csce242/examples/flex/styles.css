@@ -1,0 +1,88 @@
+/* Stucture */
+body {
+    background:#91a665;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width:95%;
+    margin:auto;
+    background:#d9b68b;
+    padding:5px;
+    border-radius:10px;
+}
+
+#main-header {
+    background:#8a8c42;
+    color:#ffffff;
+    border-radius:10px;
+    padding:5px;
+}
+
+/* Main Navigation */
+#main-nav ul {
+    list-style-type:none; /* Remove bullets */
+    padding-left:0;
+}
+
+#main-nav li {
+    border-bottom:1px solid #ffffff;
+}
+
+#main-nav li:first-child { /* Apply to first child in li only */
+    border-top:1px solid #ffffff;
+}
+
+#main-nav a {
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 5px;
+    display:block;
+}
+
+#main-nav a:hover {
+    background:#ffffff;
+    color:#8a8c42;
+}
+
+/* Larger devices */
+@media only screen and (min-width: 768px) {
+    body {
+        background:url(images/background.jpg);
+        background-size:cover;
+    }
+
+    #content {
+        width:70%;
+    }
+
+    /* Columns */
+    .columns {  /* .name is a class, 1 id per element vs. multiple classes per element */
+        display:flex;
+    }
+
+    /* Main Nav */
+    #main-nav li {
+        flex:1; /* Flex works as ratio, all children are 1:1:1:1 */
+    }
+
+    #main-nav li, #main-nav li:first-child {
+        border:none;
+    }
+
+    #main-nav a {
+        text-align:center;
+        padding:5px;
+    }
+
+    #main-nav a:hover {
+        background:#8a8c42;
+        color:#ffffff;
+        border-bottom:1px solid #ffffff;
+    }
+}
+
+/* Typography*/
+h1 {
+    text-align:center;
+}
