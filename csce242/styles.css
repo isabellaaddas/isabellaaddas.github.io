@@ -61,10 +61,16 @@ body {
 
     .columns {
         display:flex;
+        flex-direction:column;
     }
 }
 
 /* Classes */
+.columns {
+    display:flex;
+    flex-direction:row;
+}
+
 .assignments {
     background:#bdf26d;
     width:75%;
