@@ -29,6 +29,19 @@ body {
     color:#101010;
 }
 
+/* Classes */
+.assignments {
+    background:#bdf26d;
+    width:75%;
+    margin:15px;
+    text-align:center;
+}
+
+.thumbnails {
+    width:70%;
+    padding-top:10px;
+}
+
 /* Larger devices */
 @media only screen and (min-width: 768px) {
     body {
@@ -51,25 +64,12 @@ body {
     .assignments {
         margin-left:15px;
         margin-right:15px;
-        margin-bottom:0;
+        margin-bottom:15px;
     }
 
     .columns {
         display:flex;
     }
-}
-
-/* Classes */
-.assignments {
-    background:#bdf26d;
-    width:75%;
-    margin:10px;
-    text-align:center;
-}
-
-.thumbnails {
-    width:70%;
-    padding-top:10px;
 }
 
 /* Typography */
