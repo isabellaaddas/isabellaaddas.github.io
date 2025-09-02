@@ -29,6 +29,11 @@ body {
     color:#101010;
 }
 
+/* Images */
+img {
+    max-width:100%;
+}
+
 /* Classes */
 .assignments {
     background:#bdf26d;
