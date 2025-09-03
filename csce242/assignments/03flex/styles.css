@@ -22,14 +22,24 @@ body {
     background:#c63636;
     padding:3px 15px;
     width:15%;
+    margin: 0 0 5px 0;
 }
 
-#main-section-2 #titles {
-    width:30%;
+#titles {
+    flex:2;
 }
 
-#main-section-2 #gallery {
-    width:50%;
+#gallery {
+    flex:3;
+}
+
+#titles, #gallery {
+    justify-content:space-around;
+}
+
+#main-footer {
+    background:#c63636;
+    padding:15px 3px;
 }
 
 /* Navigation */
@@ -83,16 +93,16 @@ img {
 .title-articles {
     background:#eeeeee;
     padding:10px;
-    width:45%;
+    margin: 0 0 5px 5px;
+    width:42%;
 }
 
 .gallery-articles {
     background:#3a4750;
     padding:10px;
-    width:30%;
+    margin: 0 0 5px 5px;
+    width:27%;
 }
-
-/* Resolution */
 
 /* Typography */
 #main-header h1 {
@@ -128,3 +138,11 @@ img {
 #section-2-aside h5 {
     color:#ffffff;
 }
+
+#main-footer p {
+    color:#ffffff;
+    text-align:center;
+    font-size:75;
+}
+
+/* Resolution */
