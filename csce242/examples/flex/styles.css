@@ -1,6 +1,10 @@
 /* Stucture */
+:root {
+    --primary-color:#91a665;
+}
+
 body {
-    background:#91a665;
+    background:var(--primary-color);
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -17,6 +21,7 @@ body {
     color:#ffffff;
     border-radius:10px;
     padding:5px;
+    position:relative;
 }
 
 #main-content section, #main-content aside {
@@ -28,6 +33,33 @@ body {
     padding:5px;
     border-radius:5px;
     margin:5px;
+}
+
+/* Showcase */
+#showcase {
+    position:relative;  /* Children with absolute positioning will position relative to 
+                            this parent (only when parent is relative) */
+}
+
+#showcase p {
+    background:#0000008a;
+    color:#ffffff;
+    padding:10px;
+    width:fit-content;
+
+    position:absolute;
+    bottom:10%;
+    left:5%;
+}
+
+/* Images */
+#main-header img {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:75px;
+    border-radius:50px;
 }
 
 /* Gallery */
@@ -51,9 +83,13 @@ img {
 }
 
 /* Main Navigation */
-#main-nav ul {
+nav ul {
     list-style-type:none; /* Remove bullets */
     padding-left:0;
+}
+
+nav a {
+    text-decoration:none;
 }
 
 #main-nav li {
@@ -66,7 +102,6 @@ img {
 
 #main-nav a {
     color:#ffffff;
-    text-decoration:none;
     padding:10px 5px;
     display:block;
 }
@@ -76,16 +111,24 @@ img {
     color:#8a8c42;
 }
 
-.hide {
-    display:none;
+#login-nav {
+    position:absolute;
+    top:0;
+    right:2.5%;
 }
 
-.hide-small {
-    display:none;
+#login-nav a {
+    color:#ffffff;
+    padding:5px;
+    display:block;
+}
+
+#login-nav li:hover {
+    border-bottom:1px solid #ffffff;
 }
 
 /* Larger devices */
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation:landscape) {
     body {
         background:url(images/background.jpg);
         background-size:cover;
@@ -140,8 +183,13 @@ img {
         border-bottom:1px solid #ffffff;
     }
 
-    .hide-small {
-        display:block;
+    #login-nav a {
+        display:inline;
+    }
+
+    #login-nav li:not(:last-child)::after {
+        content:"|";
+        margin:0 5px;
     }
 }
 
