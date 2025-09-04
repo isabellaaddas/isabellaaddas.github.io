@@ -17,8 +17,10 @@ body {
 }
 
 #main-nav ul {
-    list-style-type:none;
-    margin:auto;
+    list-style-type: none;
+    margin: auto;
+    text-align: center;
+    padding: 0;
 }
 
 #main-nav li {
@@ -38,7 +40,7 @@ img {
 .assignments {
     background:#bdf26d;
     width:75%;
-    margin:15px;
+    margin:20px auto;
     text-align:center;
 }
 
@@ -48,7 +50,7 @@ img {
 }
 
 /* Larger devices */
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation:landscape) {
     body {
         background:url(images/orange-bg.jpg);
         background-size:cover;
