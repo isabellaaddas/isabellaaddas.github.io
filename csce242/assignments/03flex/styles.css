@@ -9,7 +9,7 @@ body {
     width:50%;
 }
 
-#main-section-1 article aside {
+#main-section-1 article div {
     width:25%;
 }
 
@@ -142,7 +142,39 @@ img {
 #main-footer p {
     color:#ffffff;
     text-align:center;
-    font-size:75;
+    font-size:75%;
 }
 
 /* Resolution */
+@media only screen and (orientation:portrait) {
+    .columns {
+        display:block;
+    }
+
+    .wrap {
+        flex-wrap:nowrap;
+    }
+
+    .nav-columns {
+        display:block;
+    }
+
+    #main-section-1 article, #main-section-1 article section, .title-articles, .gallery-articles,
+    #section-2-aside {
+        width:auto;
+    }
+
+    #main-section-1 article div {
+        width:100%;
+        text-align:center;
+        padding-top:2%;
+    }
+
+    .title-articles img, .gallery-articles img {
+        width:75%;
+    }
+
+    #section-2-aside a {
+        font-size:75%;
+    }
+}
