@@ -33,6 +33,15 @@ header {
     background:var(--garnet-red);
     color:#ffffff;
     padding:15px;
+    display:block;
+}
+
+#block-2 div:first-child {
+    width:75%;
+}
+
+#block-2 div:last-child {
+    margin:auto;
 }
 
 /* Flex */
@@ -47,10 +56,6 @@ header {
     display:none;
 }
 
-.rel-abs {
-    position:relative;
-}
-
 /* Images */
 img {
     max-width:100%;
@@ -58,6 +63,10 @@ img {
 
 #header-logo {
     width:50%;
+}
+
+#block-2-img {
+    padding:15px;
 }
 
 /* Resolution */
@@ -101,11 +110,16 @@ header h1 {
 #body-title {
     font-family:var(--serif-font);
     padding-left:15px;
+    font-size:3em;
 }
 
 #block-1 h2 {
     padding:3%;
-    font-size:150%;
+    font-size:2em;
+}
+
+#block-2 h1 {
+    font-size:4em;
 }
 
 .red-text {
