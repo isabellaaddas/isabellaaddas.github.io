@@ -2,6 +2,8 @@
 :root {
     --garnet-red:#750009;
     --off-white:#EDEDED;
+    --grey-blue:#1E404D;
+    --border-grey:#A3A3A3;
     --serif-font:'Berlingske Serif', 'Georgia', serif;
 }
 
@@ -27,21 +29,150 @@ header {
     margin-left:15px;
     width:70%;
     color:#ffffff;
+    font-family:var(--serif-font);
+    text-align:left;
 }
 
 #block-2 {
     background:var(--garnet-red);
     color:#ffffff;
     padding:15px;
-    display:block;
 }
 
-#block-2 div:first-child {
+#block-2-text {
     width:75%;
+    padding-left:8%;
 }
 
-#block-2 div:last-child {
+#block-2-link, #block-4-link, #block-6-link, #block-8-link,
+#block-9-link {
+    margin-top:15%;
+    margin-bottom:12%;
+}
+
+#block-2-img, #block-5-img, #block-6-img, #block-8-img {
     margin:auto;
+    padding:5%;
+}
+
+#block-3 {
+    background:var(--off-white);
+    padding:5%;
+}
+
+#program-links {
+    justify-content:center;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+#block-4-text {
+    background:#000000;
+    color:#ffffff;
+    padding:5%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#block-5 {
+    background:var(--garnet-red);
+    color:#ffffff;
+    padding:5%;
+    font-family:var(--serif-font);
+}
+
+#block-5-quote {
+    margin:5% 10%;
+}
+
+#block-6 {
+    background:var(--grey-blue);
+    color:#ffffff;
+    padding:3%;
+}
+
+#block-6-text, #block-8-text {
+    padding:5% 10%;
+}
+
+#article-1-text, #article-2-text, #article-3-text {
+    margin-top:10px;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+#block-8 {
+    background:#000000;
+    color:#ffffff;
+    padding:5%;
+}
+
+#block-9 {
+    background:var(--off-white);
+    padding:5% 10%;
+}
+
+#social-media {
+    padding-top:10%;
+    padding-bottom:5%;
+    text-align:center;
+}
+
+#social-media::after, #directory-links::after {
+    content:"";
+    display:block;
+    width:50%;
+    margin:0 auto;
+    border-bottom:solid 1px var(--border-grey);
+}
+
+#block-9-media {
+    margin-bottom:5%;
+}
+
+#directory-links {
+    text-align:center;
+    font-size:250%;
+}
+
+#directory-links div div {
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+#college {
+    margin-top:5%;
+    margin-bottom:3%;
+    text-align:center;
+    font-size:75%;
+}
+
+#block-10 {
+    background:var(--garnet-red);
+    color:#ffffff;
+    padding:5%;
+}
+
+#block-10-header #usc-logo {
+    text-align:center;
+}
+
+#block-10-media {
+    text-align:center;
+    margin:15%;
+}
+
+#logo-img-end {
+    flex:1;
+}
+
+#logo-text-end {
+    flex:3;
+    margin-left:15px;
+    color:#ffffff;
+    font-family:var(--serif-font);
+    text-align:left;
+    font-size:250%;
 }
 
 /* Flex */
@@ -49,11 +180,88 @@ header {
     display:flex;
 }
 
+.one {
+    flex:1;
+}
+
+.two {
+    flex:2;
+}
+
+.three {
+    flex:3;
+}
+
 /* Navigation Bars */
+ul {
+    list-style-type:none;
+    padding-left:0;
+}
+
+#main-nav ul {
+    background:var(--garnet-red);
+    color:#ffffff;
+    margin:0;
+}
+
+#main-nav li {
+    border-top:solid 1px #ffffff;
+    padding:3.5%;
+}
+
+#main-nav a {
+    padding:10px;
+}
+
+footer {
+    background:#000000;
+    color:#ffffff;
+    margin:0;
+    padding:10px;
+}
 
 /* Classes */
 .hide-small {
     display:none;
+}
+
+.button-black {
+    background:#000000;
+    color:#ffffff;
+    border:solid 5px #ffffff;
+    text-decoration:none;
+    padding:20px 30px;
+}
+
+.button-red {
+    background:var(--garnet-red);
+    color:#ffffff;
+    border:solid 5px #ffffff;
+    text-decoration:none;
+    padding:20px 30px;
+}
+
+.article-links {
+    margin-top:10%;
+    margin-bottom:10%;
+    text-align:center;
+}
+
+.article-pics {
+    margin:auto;
+    padding:7%;
+}
+
+.red-text {
+    color:var(--garnet-red);
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.block-10-column {
+    margin:10% 5%;
 }
 
 /* Images */
@@ -65,34 +273,16 @@ img {
     width:50%;
 }
 
-#block-2-img {
-    padding:15px;
-}
-
-/* Resolution */
-@media only screen and (orientation:landscape) {
-    .columns {
-        display:flex;
-    }
-
-    .one {
-        flex:1;
-    }
-
-    .two {
-        flex:2;
-    }
-
-    .three {
-        flex:3;
-    }
-
-    .hide-small {
-        display:block;
-    }
+#block-5-img img {
+    border-radius:50%;
 }
 
 /* Typography */
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
 #logo-text h3 {
     margin-bottom:0;
 }
@@ -114,18 +304,283 @@ header h1 {
 }
 
 #block-1 h2 {
-    padding:3%;
+    padding:5%;
     font-size:2em;
 }
 
 #block-2 h1 {
-    font-size:4em;
+    font-size:3em;
 }
 
-.red-text {
-    color:var(--garnet-red);
+#block-3 h2, #block-3 p {
+    text-align:center;
 }
 
-.bold {
-    font-weight:bold;
+#block-3 h2 {
+    margin:auto;
+    margin-bottom:1.5em;
+    margin-top:2em;
+}
+
+#block-3 p {
+    font-weight:200;
+    font-size:75%;
+    line-height:3rem;
+    padding-left:3%;
+    padding-right:3%;
+}
+
+#program-links a {
+    font-size:2em;
+    display:block;
+    margin:5%;
+}
+
+#block-4-text p, #block-8-text p {
+    font-size:85%;
+    line-height:3rem;
+}
+
+#block-6-text p, #block-7-columns p {
+    line-height:3rem;
+}
+
+#block-7 h1 {
+    text-align:center;
+    margin-top:15%;
+    font-size:300%;
+}
+
+#social-media h2 {
+    font-family:var(--serif-font);
+}
+
+#block-9-link a {
+    font-size:70%;
+}
+
+#college a {
+    text-decoration:underline;
+}
+
+#colllege p {
+    line-height:3rem;
+    font-weight:200;
+}
+
+#block-10-header #logo-text {
+    font-size:200%;
+}
+
+#block-10-columns h3 {
+    padding-bottom:3%;
+    border-bottom:solid 3px #ffffff;
+}
+
+#block-10-columns a {
+    font-size:70%;
+}
+
+/* Resolution */
+@media only screen and (orientation:landscape) {
+    /* Structure */
+    #block-2, #block-6, #block-8, #social-media {
+        padding:0;
+    }
+
+    #block-2-text, #block-6-text {
+        padding-left:3%;
+        padding-top:5%;
+        padding-bottom:5%;
+    }
+
+    #block-2-img, #block-5-img, #block-6-img {
+        margin:0;
+        padding:0;
+    }
+
+    #block-4-link {
+        margin:7% 0;
+    }
+
+    #block-5 {
+        padding:3%;
+    }
+
+    #block-5-quote {
+        margin:5%;
+        font-size:1.5em;
+    }
+
+    #block-8-text {
+        padding:5% 3%;
+    }
+
+    #block-8-img {
+        padding:2.5%;
+    }
+
+    #block-9 {
+        padding:2%;
+    }
+
+    #block-9-link {
+        margin-top:3%;
+        margin-bottom:0;
+    }
+
+    #block-9-media {
+        margin-bottom:0;
+    }
+
+    #social-media::after, #directory-links::after {
+        content:none;
+    }
+
+    #block-10 {
+        padding:2%;
+    }
+
+    #block-10-media {
+        text-align:right;
+        margin:0;
+    }
+
+    /* Flex */
+    .columns {
+        display:flex;
+    }
+
+    .hide-small {
+        display:flex;
+    }
+
+    /* Navigation */
+    #top-nav ul {
+        background:#000000;
+        color:#ffffff;
+        margin:0;
+    }
+
+    #top-nav li {
+        padding: 5px 0;
+        padding-left: 5px;
+    }
+
+    #top-nav li:not(:last-child)::after {
+        content:"|";
+        margin:0 5px;
+    }
+
+    #main-nav li {
+        border-top:none;
+        padding:1.5%;
+    }
+
+    #main-nav ul {
+        justify-content:end;
+    }
+
+    /* Positioning */
+    #block-1 {
+        position:relative;
+    }
+
+    #block-1 h1 {
+        position:absolute;
+        top:40%;
+        background:#ffffff8f;
+        padding:3%;
+    }
+
+    #block-4 {
+        position:relative;
+    }
+
+    #block-4-text {
+        position:absolute;
+        right:0;
+        bottom:15%;
+        width:50%;
+        padding:2%;
+    }
+
+    /* Images */
+    #logo-img {
+        width:15%;
+    }
+
+    #block-2-img img, #block-6-img img {
+        min-height:100%;
+    }
+
+    #block-4-img img {
+        min-width:100%;
+    }
+
+    #block-9-media img {
+        width:15%;
+    }
+
+    #college {
+        margin-top:1%;
+        margin-bottom:0;
+    }
+
+    /* Classes */
+    .button-red {
+        border:solid 3px #ffffff;
+    }
+
+    .button-black {
+        border:solid 3px #ffffff;
+    }
+
+    .block-10-column {
+        margin:3%;
+    }
+
+    /* Typography */
+    header h1 {
+        text-align:right;
+    }
+
+    #block-1 h2 {
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    #block-3 h2 {
+        margin-top:0;
+        margin-bottom:1em;
+        font-size:2.5em;
+    }
+
+    #block-3 p {
+        font-size:100%;
+    }
+
+    #program-links a {
+        margin:1%;
+    }
+
+    #block-4-text p, #block-8-text p, #directory-links, #college {
+        font-size:100%;
+    }
+
+    #block-4-text p, #block-6-text p, #block-7-columns p, #block-8-text p {
+        line-height:2rem;
+    }
+
+    #block-6-text h1 {
+        font-size:3em;
+    }
+
+    #block-7 h1 {
+        margin-top:5%;
+    }
+
+    #logo-text-end {
+        font-size:150%;
+    }
 }
