@@ -1,0 +1,121 @@
+:root {
+    --primary-color:#333333;
+    --secondary-color:#EFEFEF;
+    --tertiary-color:#BEBEBE;
+    --quaternary-color:#4F4F4F;
+    --hover-color:#93D2F3;
+}
+
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+#slideshow-logo {
+    background:url("images/deli_slideshow1.jpg");
+    background-position:center;
+    text-align:center;
+}
+
+#home {
+    margin:5%;
+}
+
+footer {
+    background:var(--primary-color);
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+footer div:not(:last-child) {
+    border-right:solid 3px #fff;
+}
+
+/* Navigation */
+ul {
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+}
+
+#main-nav {
+    background:var(--primary-color);
+    color:#fff;
+    text-align:center;
+}
+
+#main-nav li {
+    padding:25px;
+    border-top:solid 1px #fff;
+}
+
+#main-nav a {
+    padding:10px;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+#main-nav a:hover {
+    color:var(--hover-color);
+}
+
+/* Flex */
+.special-columns {
+    display:flex;
+}
+
+.one {
+        flex:1;
+}
+
+.two {
+    flex:2;
+}
+
+.three {
+    flex:3;
+}
+
+/* Classes */
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+#slideshow-logo img {
+    width:25%;
+    border-radius:50%;
+}
+
+/* Typography */
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/* Resolution */
+@media only screen and (orientation:landscape) {
+    /* Structure */
+
+    /* Navigation */
+    #main-nav li {
+        border-top:none;
+    }
+
+    /* Flex */
+    .columns {
+        display:flex;
+    }
+
+    /* Classes */
+    
+    /* Images */
+    #slideshow-logo img {
+        width:15%;
+    }
+
+    /* Typography */
+}
