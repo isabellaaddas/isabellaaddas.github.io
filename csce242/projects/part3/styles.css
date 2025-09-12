@@ -30,6 +30,33 @@ body {
     border:solid 1px #000;
 }
 
+#about-us {
+    margin:10%;
+    align-items:center;
+    border:solid 1px var(--quaternary-color);
+}
+
+#about-text {
+    padding:5%;
+}
+
+#about-imgs, #vendor-img {
+    text-align:center;
+}
+
+#vendors {
+    margin:5%;
+    align-items:center;
+}
+
+#farm-text, #supplier-text {
+    padding:3%;
+}
+
+#vendor-img {
+    padding:20px;
+}
+
 footer {
     background:var(--primary-color);
     color:#fff;
@@ -160,9 +187,20 @@ a {
     border-radius:20px;
 }
 
+#about-text h2, #vendors h3 {
+    text-align:center;
+}
+
+#vendors h3 {
+    margin-bottom:7%;
+}
+
 /* Resolution */
 @media only screen and (orientation:landscape) {
     /* Structure */
+    #about-text {
+        padding:3%;
+    }
 
     /* Navigation */
     #main-nav li {

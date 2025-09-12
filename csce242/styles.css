@@ -91,6 +91,7 @@ img {
 
     #main-nav, #secondary-nav {
         flex-wrap:wrap;
+        justify-content:space-between;
     }
 }
 
