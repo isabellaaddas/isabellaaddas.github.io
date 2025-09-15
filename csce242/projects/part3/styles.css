@@ -64,6 +64,11 @@ body {
     border:solid 1px var(--quaternary-color);
 }
 
+#find-location {
+    text-align:center;
+    padding:3% 0;
+}
+
 footer {
     background:var(--primary-color);
     color:#fff;
@@ -77,11 +82,21 @@ footer div:not(:last-child) {
 
 /* Forms */
 #job-app-form form {
-    font-size:250%;
+    font-size:200%;
 }
 
 #job-app-form input {
     font-size:0.75em;
+}
+
+#find-location input {
+    font-size:1.35em;
+    width:60%;
+}
+
+.mini-menu select {
+    font-size:0.7em;
+    margin-bottom:5%;
 }
 
 /* Navigation */
@@ -148,7 +163,7 @@ ul {
 /* Classes */
 .menu-section {
     background:var(--secondary-color);
-    border:solid 1px var(--quaternary-color);
+    border:solid 1px var(--tertiary-color);
     padding:1% 3%;
 }
 
@@ -165,12 +180,41 @@ ul {
 }
 
 .menu-item-text-top {
-    justify-content:space-between;
     font-size:160%;
 }
 
 .menu-item-text-bottom {
     font-size:120%;
+}
+
+.incr-decr {
+    align-self:center;
+}
+
+.oval {
+    border:solid 1px var(--quaternary-color);
+    border-radius:50%;
+    text-align:center;
+    width:45%;
+    padding:20px;
+    margin:20px auto;
+}
+
+.mini-menu {
+    margin:5% auto;
+    background:var(--tertiary-color);
+    padding:1% 3.5%;
+    width:40%;
+    border-radius:25px;
+    font-size:130%;
+}
+
+.previews {
+    margin:5%;
+}
+
+.item-img {
+    padding:7%;
 }
 
 /* Images */
@@ -224,6 +268,15 @@ img {
     align-self:center;
 }
 
+.incr-decr button {
+    background:#fff;
+    border:solid 1px var(--tertiary-color);
+    border-radius:3px;
+    width:40px;
+    height:40px;
+    padding:5px;
+}
+
 /* Typography */
 a {
     color:inherit;
@@ -248,20 +301,46 @@ a {
     border-radius:20px;
 }
 
-#about-text h2, #vendors h3, #job-desc h2, .menu-section h2 {
+#about-text h2, #vendors h2, #job-desc h2, .menu-section h1, .item-info-text h1 {
     text-align:center;
 }
 
-#vendors h3 {
+#vendors h2 {
     margin-bottom:7%;
 }
 
-.menu-section h2 {
+.menu-section h1 {
     font-size:200%;
+}
+
+.menu-item-text-top h4:last-child {
+    text-align:right;
 }
 
 .menu-item-text-bottom p {
     margin-top:0;
+}
+
+.incr-decr span {
+    margin:0 25px;
+}
+
+#catering {
+    font-size:150%;
+}
+
+.item-info-text h2 {
+    border:solid 1px var(--quaternary-color);
+    border-bottom:none;
+    padding:1.5%;
+    margin:0 5%;
+    margin-top:5%;
+}
+
+.item-info-text p {
+    border:solid 1px var(--quaternary-color);
+    padding:3%;
+    margin:0 5%;
 }
 
 /* Resolution */
@@ -288,12 +367,13 @@ a {
     }
 
     /* Forms */
-    #job-app-form form {
-        font-size:100%;
+    #job-app-form form, #job-app-form input, #find-location input, 
+    .mini-menu select {
+        font-size:initial;
     }
 
-    #job-app-form input {
-        font-size:100%;
+    .mini-menu select {
+        width:100%;
     }
 
     /* Navigation */
@@ -309,6 +389,23 @@ a {
     /* Classes */
     .menu-section {
         padding:1.5%;
+    }
+
+    .oval {
+        width:75%;
+    }
+
+    .mini-menu {
+        padding:1.5% 5%;
+        width:75%;
+    }
+
+    .previews {
+        align-items:center;
+    }
+
+    .item-img {
+        padding:0;
     }
     
     /* Images */
@@ -326,9 +423,33 @@ a {
         font-size:65%;
     }
 
+    .incr-decr button {
+        width:25px;
+        height:25px;
+        padding:0;
+    }
+
+    #cheese button, #extras button, #desserts button {
+        width:15px;
+        height:15px;
+    }
+
     /* Typography */
-    #map-header h3, .menu-section h2, .menu-item-text-top,
-    .menu-item-text-bottom {
+    #map-header h3, .menu-item-text-top,
+    .menu-item-text-bottom, #catering, .minu-menu {
         font-size:100%;
+    }
+
+    .menu-section h1 {
+        font-size:150%;
+    }
+
+    #cheese, #extras, #desserts {
+        font-size:80%;
+    }
+
+    #cheese span, #extras span, #desserts span {
+        font-size:80%;
+        margin:0 15px;
     }
 }
