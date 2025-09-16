@@ -169,6 +169,7 @@ ul {
 
 .menu-item {
     align-items:center;
+    margin:15px 0;
 }
 
 .menu-item-img {
@@ -429,11 +430,6 @@ a {
         padding:0;
     }
 
-    #cheese button, #extras button, #desserts button {
-        width:15px;
-        height:15px;
-    }
-
     /* Typography */
     #map-header h3, .menu-item-text-top,
     .menu-item-text-bottom, #catering, .minu-menu {
@@ -442,14 +438,5 @@ a {
 
     .menu-section h1 {
         font-size:150%;
-    }
-
-    #cheese, #extras, #desserts {
-        font-size:80%;
-    }
-
-    #cheese span, #extras span, #desserts span {
-        font-size:80%;
-        margin:0 15px;
     }
 }
