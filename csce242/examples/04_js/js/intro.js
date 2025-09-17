@@ -42,3 +42,52 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
     document.getElementById("p-emotion").innerHTML = `You are feeling ${userInput}.`;
     document.getElementById("img-emotion").classList.remove("hidden");
 };
+
+document.getElementById("btn-mood").onclick = () => {
+    // .trim() removes whitespace
+    // .toLowerCase changes it all to lowercase
+    const userColor = document.getElementById("txt-mood").value.trim().toLowerCase();
+    const userMood = document.getElementById("p-mood");
+    const error = document.getElementById("error-mood");
+    error.innerHTML = ""; // Reset error
+    let mood = "";
+    userMood.innerHTML = ""; // Reset paragraph
+
+    if (userColor == "") {
+        error.innerHTML = "* blank";
+        return;
+    }
+
+    if (userColor == "red") {
+        mood = "mad";
+    } else if (userColor == "pink") {
+        mood = "in love";
+    } else if (userColor == "blue") {
+        mood = "sad";
+    } else if (userColor == "yellow") {
+        mood = "happy";
+    } else if (userColor == "black") {
+        mood = "emo";
+    } else if (userColor == "green") {
+        mood = "jealous";
+    }
+
+    if (mood == "") {
+        error.innerHTML = "* Invalid color";
+        return;
+    }
+
+    userMood.innerHTML = `You chose ${userColor}, you must be ${mood}`;
+};
+
+document.getElementById("btn-bounce").onclick = (event) => {
+    const ball = document.getElementById("ball");
+
+    if (ball.classList.contains("bounce")) {
+        event.currentTarget.innerHTML = "Start";
+    } else {
+        event.currentTarget.innerHTML = "Stop";
+    }
+
+    ball.classList.toggle("bounce");
+}
