@@ -90,4 +90,14 @@ document.getElementById("btn-bounce").onclick = (event) => {
     }
 
     ball.classList.toggle("bounce");
+};
+
+/* Counter */
+
+document.getElementById("btn-count-start").onclick = () => {
+    console.log("Start");
+}
+
+document.getElementById("btn-count-stop").onclick = () => {
+    console.log("Stop");
 }
