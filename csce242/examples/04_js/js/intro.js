@@ -93,11 +93,70 @@ document.getElementById("btn-bounce").onclick = (event) => {
 };
 
 /* Counter */
+let counter = 0;
+let counterInterval;
+const countP = document.getElementById("p-count");
+const startBtn = document.getElementById("btn-count-start");
+const stopBtn = document.getElementById("btn-count-stop");
+const resetBtn = document.getElementById("btn-count-reset");
 
-document.getElementById("btn-count-start").onclick = () => {
-    console.log("Start");
+startBtn.onclick = () => {
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    resetBtn.disabled = false;
+
+    // Parameter one features entire function declaration
+    counterInterval = setInterval(()=>{
+        counter++;
+        countP.innerHTML = counter;
+    }, 1000);
+};
+
+stopBtn.onclick = () => {
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    // Stops interval
+    clearInterval(counterInterval);
+};
+
+resetBtn.onclick = () => {
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    resetBtn.disabled = true;
+
+    counter = 0;
+    countP.innerHTML = counter;
 }
 
-document.getElementById("btn-count-stop").onclick = () => {
-    console.log("Stop");
-}
+/* Donations */
+const goal = 10000;
+document.getElementById("goal-span").innerHTML = goal;
+
+document.getElementById("btn-donations").onclick = () => {
+    const donation = document.getElementById("txt-donation").value;
+    const errorSpan = document.getElementById("donate-error");
+    errorSpan.innerHTML = "";
+    const donationMessage = document.getElementById("donation-msg");
+    donationMessage.innerHTML = "";
+
+    if (isNaN(donation) || (donation <= 0)) {
+        errorSpan.innerHTML = "* Invalid amount";
+        return;
+    }
+
+    const donationPercent = donation / goal * 100;
+
+    if (donationPercent >= 100) {
+        donationMessage.innerHTML = "Goal reached!"
+    } else if (donationPercent >= 80) {
+        donationMessage.innerHTML = "Almost there!";
+    } else if (donationPercent >= 50) {
+        donationMessage.innerHTML = "Keep going!";
+    } else if (donationPercent >= 25) {
+        donationMessage.innerHTML = "Keep going";
+    } else {
+        donationMessage.innerHTML = "Let's get started";
+    }
+
+    document.querySelector(":root").style.setProperty("--donation-percent", donationPercent + "%");
+};

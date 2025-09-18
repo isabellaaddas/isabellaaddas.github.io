@@ -84,9 +84,26 @@
 
                 <section>
                     <button id="btn-count-start">Start</button>
-                    <button id="btn-count-stop">Stop</button>
+                    <button id="btn-count-stop" disabled>Stop</button>
+                    <button id="btn-count-reset" disabled>Reset</button>
 
                     <p id="p-count"></p>
+                </section>
+
+                <section>
+                    <h3>Charity Goal $<span id="goal-span"></span></h3>
+
+                    <p>
+                        <label for="txt-donation">Donations:</label>
+                        <input id="txt-donation" type="text">
+                        <span id="donate-error" class="error"></span>
+                    </p>
+
+                    <button id="btn-donations">Add Donation</button><br><br>
+
+                    <p id="donation-msg"></p>
+
+                    <div id="thermometer"></div>
                 </section>
             </main>
             <footer>
