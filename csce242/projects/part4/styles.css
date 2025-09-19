@@ -1,15 +1,16 @@
 :root {
-    --primary-color:#333333;
-    --secondary-color:#EFEFEF;
-    --tertiary-color:#BEBEBE;
-    --quaternary-color:#4F4F4F;
-    --hover-color:#93D2F3;
+    --primary-color:#A72608;
+    --secondary-color:#dbdbdb;
+    --tertiary-color:#50A2A7;
+    --quaternary-color:#14453D;
+    --hover-color:#E9B44C;
 }
 
 /* Structure */
 body {
     font-family:Arial, Helvetica, sans-serif;
     margin:0;
+    background:#ffffff;
 }
 
 #slideshow-logo {
@@ -202,6 +203,7 @@ ul {
 }
 
 .mini-menu {
+    color:#fff;
     margin:5% auto;
     background:var(--tertiary-color);
     padding:1% 3.5%;
