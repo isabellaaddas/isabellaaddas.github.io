@@ -1,0 +1,123 @@
+:root {
+    --primary-color:#F5CECA;
+    --secondary-color:#F58477;
+    --tertiary-color:#F59A78;
+    --quartnery-color:#F57898;
+    --quinary-color:#F578E3;
+}
+
+/* Structure */
+body {
+    background:var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    font-size:150%;
+}
+
+#main-header {
+    padding:15px;
+    text-align:center;
+}
+
+#main-content {
+    text-align:center;
+}
+
+#main-footer {
+    text-align:center;
+    color:var(--secondary-color);
+}
+
+/* Form */
+#days-slider {
+    width:max-content;
+}
+
+/* Navigation */
+#exercise-menu {
+    text-align:left;
+    color:var(--tertiary-color);
+}
+
+ul {
+    list-style-type:none;
+    padding-left:0;
+    margin:10px;
+    justify-content:center;
+}
+
+/* Images */
+img {
+    width:30%;
+    text-align:center;
+}
+
+/* Classes */
+.java-section {
+    background:#fff;
+    border:solid 1px var(--quartnery-color);
+    margin:0 15px;
+    color:var(--tertiary-color);
+    padding:20px 5px;
+}
+
+.hide-section {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
+/* Typography */
+#main-header h1 {
+    color:var(--secondary-color);
+}
+
+#main-header h2 {
+    color:var(--quartnery-color);
+}
+
+#main-content p {
+    color:var(--tertiary-color);
+}
+
+.java-section h3 {
+    text-align:center;
+}
+
+#small-toggle p {
+    margin:0;
+}
+
+/* Resolution */
+@media screen and (orientation:landscape) {
+    /* Structure */
+    body, .java-section p {
+        font-size:100%;
+    }
+
+    #small-toggle {
+        display:none;
+    }
+
+    /* Navigation */
+    #exercise-menu {
+        text-align:center;
+    }
+
+    #exercise-menu li:not(:last-child)::after {
+        content:"|";
+        margin:0 10px;
+    }
+
+    /* Images */
+    img {
+        width:20%;
+    }
+
+    /* Classes */
+     .columns {
+        display:flex;
+     }
+}

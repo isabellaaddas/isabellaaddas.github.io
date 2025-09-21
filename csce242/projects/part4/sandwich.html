@@ -11,11 +11,17 @@
         <div id="content">
             <header>
                 <div id="slideshow-logo">
-                    <div id="logo"><img src="images/temp_logo.jpg" href="index.html"></div>
+                    <div id="logo"><img src="images/deli-logo.png" href="index.html"></div>
                 </div>
 
+                <div id="small-toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
                 <nav id="main-nav">
-                    <ul class="columns">
+                    <ul id="nav-items" class="columns hide-small">
                         <li class="one"><a href="about-us.html">About Us</a></li>
                         <li class="one"><a href="menu.html">Menu</a></li>
                         <li class="one"><a href="catering.html">Catering</a></li>
@@ -27,16 +33,16 @@
 
             <main>
                 <div class="previews columns">
-                    <div class="item-img four"><img src="images/sandwich-holder.jpg"></div>
+                    <div class="item-img four"><img src="images/neapolitan-style.jpg"></div>
 
                     <div class="item-info-text five">
-                        <h1>NAPLES STYLE</h1>
+                        <h2>NAPLES STYLE</h2>
 
                         <!--Note: Will be changed later to implement accordion style menu-->
-                        <h2>Ingredients</h2>
+                        <h3>Ingredients</h3>
                         <p>Donec nec mi et ex rhoncus consectetur. Curabitur at feugiat massa. Cras vel enim tellus. Sed lacinia ante sollicitudin dolor molestie pulvinar. Proin vitae magna id ligula feugiat dictum eu ac nisl. Etiam consectetur nibh vel diam posuere mollis. Ut laoreet purus in velit fringilla, in pharetra ex placerat.</p>
                     
-                        <h2>Allergen Information</h2>
+                        <h3>Allergen Information</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt rutrum tincidunt. Nam sem erat, dictum quis metus at, efficitur lobortis diam. Morbi sed libero id erat tincidunt lobortis. Cras non nulla pellentesque, consectetur diam vitae, convallis purus. In dapibus elementum bibendum. Morbi id mollis odio. Fusce commodo vestibulum turpis, vel fermentum risus. Nam lobortis volutpat pulvinar. Sed tincidunt aliquam lectus eu porta. Sed non sem eget nisi molestie ullamcorper vestibulum et leo. Aenean finibus, augue et ultricies fringilla, dolor sem finibus mi, ac tempor dui tellus vel lacus.</p>
                     </div>
                 </div>
@@ -48,5 +54,7 @@
                 <div id="footer-info2" class="one"><h4>example@gmail.com</h4></div>
             </footer>
         </div>
+
+        <script src="js/toggle-nav.js"></script>
     </body>
 </html>
