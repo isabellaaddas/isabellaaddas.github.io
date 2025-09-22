@@ -74,6 +74,8 @@ function printClock() {
 
     if (hours < 12) {
         pClock.innerHTML = `${hours}:${minutes} am`;
+    } else if (hours == 12) {
+        pClock.innerHTML = `${hours}:${minutes} pm`;
     } else {
         pClock.innerHTML = `${hours - 12}:${minutes} pm`;
     }
