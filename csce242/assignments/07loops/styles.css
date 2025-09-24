@@ -1,0 +1,58 @@
+:root {
+    --day-color:#ADD8E6;
+    --night-color:#000;
+    --primary-color:#5E878C;
+    --secondary-color:#D98282;
+}
+
+/* Structure */
+body {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--day-color);
+}
+
+#scene-header {
+    text-align:center;
+}
+
+/* Classes */
+/* Cloud art: https://codepen.io/antoniasymeonidou/pen/BawKMqg */
+.cloud {
+  background: #ffffff;
+  width: 300px; 
+  height: 100px;
+  border-radius: 150px;	
+  box-shadow: 10px 10px #00000033;
+}
+
+.cloud:after {
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  left: 50px;
+}
+
+.cloud:before {
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+  top: -90px;
+  right: 40px;
+}
+
+/* Typography */
+#scene-header h1 {
+    color:var(--primary-color);
+}
+
+#scene-header h2 {
+    color:var(--secondary-color);
+}
