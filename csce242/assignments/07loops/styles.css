@@ -1,6 +1,5 @@
 :root {
-    --day-color:#ADD8E6;
-    --night-color:#000;
+    --day-or-night:#AED8E6;
     --primary-color:#5E878C;
     --secondary-color:#D98282;
 }
@@ -9,19 +8,30 @@
 body {
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:var(--day-color);
+    background:var(--day-or-night);
 }
 
 #scene-header {
     text-align:center;
+    position:relative;
+}
+
+#div-clouds, #div-trees {
+  position:relative;
 }
 
 /* Classes */
+.columns {
+  display:flex;
+}
+
 /* Cloud art: https://codepen.io/antoniasymeonidou/pen/BawKMqg */
 .cloud {
+  position:absolute;
+  top:5em;
   background: #ffffff;
-  width: 300px; 
-  height: 100px;
+  width: 90px; 
+  height: 30px;
   border-radius: 150px;	
   box-shadow: 10px 10px #00000033;
 }
@@ -30,10 +40,10 @@ body {
   content: '';
   background: #ffffff;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  top: -50px;
+  top: -30px;
   left: 50px;
 }
 
@@ -41,11 +51,74 @@ body {
   content: '';
   background: #ffffff;
   position: absolute;
-  width: 170px;
-  height: 150px;
+  width: 85px;
+  height: 75px;
   border-radius: 50%;
-  top: -90px;
-  right: 40px;
+  top: -50px;
+  right: 10px;
+}
+
+/* Tree art: https://codepen.io/johnx4321/pen/jORQZeM */
+.tree {
+  position:absolute;
+  top:10em;
+}
+
+.leaf1, .leaf2, .leaf3 {
+  height:3em;
+  width:3em;
+  background:#5D9B28;
+  border-radius:100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.leaf1 {
+  top:20px;
+  left:40px;
+}
+
+.leaf2 {
+  top:50px;
+  left:20px;
+}
+
+.leaf3 {
+  top:50px;
+  left:60px;
+}
+
+.stem {
+  width:20px;
+  height:75px;
+  background:#5C362D;
+  position: absolute;
+  top:50px;
+  left:55px;
+  z-index: 1;
+}
+
+/* Moon art: https://molly.hashnode.dev/creating-a-crescent-moon-with-pure-css */
+.moon {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 0px yellow;
+  position:absolute;
+  right:30px;
+  top:-15px;
+}
+
+/* Sun art: by me */
+.sun {
+  width:100px;
+  height:100px;
+  background:#FFD712;
+  border-radius:50%;
+  position:absolute;
+  right:5px;
+  top:-15px;
 }
 
 /* Typography */

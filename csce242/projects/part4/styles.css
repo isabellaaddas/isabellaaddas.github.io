@@ -45,6 +45,10 @@ body {
     text-align:center;
 }
 
+#catering {
+    background:var(--secondary-color);
+}
+
 #vendors, #careers {
     margin:5%;
     align-items:center;
@@ -131,13 +135,15 @@ ul {
 }
 
 #main-nav a {
-    padding:10px;
+    padding:15px;
     font-weight:bold;
     font-size:1.5em;
 }
 
 #main-nav a:hover {
-    color:var(--quinary-color);
+    background-color:var(--quinary-color);
+    border-radius:10px;
+    transition:0.2s;
 }
 
 /* Flex */
