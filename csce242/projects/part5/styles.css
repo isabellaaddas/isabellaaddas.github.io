@@ -286,6 +286,19 @@ img {
     padding:2.5%;
 }
 
+#farm-map, #delivery-truck {
+    text-align:center;
+}
+
+#farm-map img {
+    width:50%;
+}
+
+#delivery-truck img {
+    margin-top:30px;
+    width:85%;
+}
+
 /* Table */
 #hours-table {
     width:100%;
@@ -526,6 +539,10 @@ a {
 
     #about-imgs div:first-child {
         margin-top:3px;
+    }
+
+    #delivery-truck img {
+        margin-top:10px;
     }
 
     /* Table */
