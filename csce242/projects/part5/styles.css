@@ -477,7 +477,7 @@ a {
     }
 
     #job-app-form input:not(:last-child, #resume) {
-        width:50%;
+        width:95%;
     }
 
     .mini-menu select {
