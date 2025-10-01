@@ -1,0 +1,58 @@
+:root {
+    --primary-color:#D9FAF9;
+    --secondary-color:#FADBA7;
+    --tertiary-color:#BEFAD7;
+    --quarternary-color:#FAA778;
+    --quinary-color:#4CA8A7;
+    --senary-color:#2F7A4E;
+}
+
+/* Structure */
+body {
+    margin:0;
+    background:var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#home-header, #home-footer {
+    text-align:center;
+}
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+.painting img {
+    width:75%;
+}
+
+/* Classes */
+.painting {
+    text-align:center;
+}
+
+/* Typography */
+#home-header h1 {
+    color:var(--senary-color);
+}
+
+#home-header h2 {
+    color:var(--quarternary-color);
+}
+
+.painting h3 {
+    color:var(--quinary-color);
+}
+
+#home-footer p {
+    color:var(--quarternary-color);
+    font-weight:bold;
+}
+
+/* Resolution */
+@media screen and (orientation:landscape) {
+    .columns {
+        display:flex;
+    }
+}

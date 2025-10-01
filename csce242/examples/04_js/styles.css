@@ -87,6 +87,14 @@ main {
     color:purple;
 }
 
+.error {
+    color:red;
+}
+
+input {
+    max-width:100%;
+}
+
 .sub-section a {
     text-decoration:none;
     color:var(--primary-color);
@@ -103,23 +111,23 @@ main {
 
 /* Animations */
 #ball {
+    margin-top:10px;
     background:#2B91AD;
     height:50px;
     width:50px;
-    border-radius:50px;
+    border-radius: 50px;
     position:relative;
-    margin-top:10px;
 }
 
 .bounce {
-    animation-name:ball-bounce;
-    animation-duration:2s;
-    animation-iteration-count:5;
+    animation-name: ball-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
 }
 
 @keyframes ball-bounce {
     0% {top:0px;}
-    50% {top:200px};
+    50% {top:200px;}
     100% {top:0px;}
 }
 
@@ -242,22 +250,16 @@ footer p {
     color:white;
 }
 
-.happy-click {
-    background:#ffff82;
-    color:black;
+.happy {
+    background:yellow;
+    color:blak;
+    border:2px dotted orange;
 }
 
-.sad-click {
-    background:#5f9cff;
+.sad {
+    background:navy;
     color:white;
-}
-
-.error {
-    color:red;
-}
-
-input {
-    max-width:100%;
+    border:2px solid skyblue;
 }
 
 #map {
@@ -265,9 +267,28 @@ input {
     height:500px;
 }
 
+/* Dogs */
+
+.dog {
+  background-color: dodgerblue;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  width:40%;
+}
+
+.dog img {
+    max-width:50%;
+}
+
+.transparent {
+    visibility:hidden;
+}
+
 
 /* Medium screens */
-@media only screen and (min-width: 800px) { 
+@media only screen and (min-width: 700px) { 
     .columns {
         display:flex;
     }
@@ -307,9 +328,12 @@ input {
         border-radius: 5px;
         margin:5px;
     }
+
+    #dog-list {
+    display: flex;
+  }
+  
 }
-
-
 
 
 /* Larger screens */
