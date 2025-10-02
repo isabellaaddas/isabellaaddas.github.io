@@ -24,12 +24,34 @@ img {
 }
 
 .painting img {
-    width:75%;
+    width:40%;
+}
+
+.w3-modal img {
+    width:100%;
+    margin-bottom:2.5%;
 }
 
 /* Classes */
 .painting {
     text-align:center;
+}
+
+.frame {
+    border:solid 10px #000;
+}
+
+.w3-modal {
+    display:block;
+    padding-top:50%;
+}
+
+.hidden {
+    display:none;
+}
+
+.w3-modal-content {
+    background:var(--secondary-color);
 }
 
 /* Typography */
@@ -43,6 +65,11 @@ img {
 
 .painting h3 {
     color:var(--quinary-color);
+    font-size:175%;
+}
+
+.w3-container h2, .w3-container p {
+    text-align:left;
 }
 
 #home-footer p {
@@ -54,5 +81,26 @@ img {
 @media screen and (orientation:landscape) {
     .columns {
         display:flex;
+    }
+
+    .painting img {
+        width:75%;
+    }
+
+    .painting h3 {
+        font-size:initial;
+    }
+
+    .w3-modal {
+        padding-top:100px;
+    }
+
+    .w3-modal-content {
+        width:400px;
+    }
+
+    .w3-modal img {
+        width:100%;
+        margin-bottom:4%;
     }
 }
