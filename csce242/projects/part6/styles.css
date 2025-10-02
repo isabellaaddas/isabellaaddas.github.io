@@ -1,0 +1,579 @@
+:root {
+    --primary-color:#A72608;
+    --secondary-color:#FFF1D6;
+    --tertiary-color:#E9B44C;
+    --quaternary-color:#14453D;
+    --quinary-color:#50A2A7;
+}
+
+/* Structure */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#ffffff;
+}
+
+#slideshow-logo {
+    background:url("images/deli_slideshow1.jpg");
+    background-position:center;
+    text-align:center;
+}
+
+#home {
+    margin:5%;
+    align-items:center;
+}
+
+#map-header {
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    border:solid 1px #000;
+}
+
+#home-text {
+    padding:3%;
+}
+
+#about-us {
+    margin:10%;
+    align-items:center;
+    border:solid 1px var(--quaternary-color);
+}
+
+#about-text {
+    padding:5%;
+}
+
+#about-imgs, #vendor-img {
+    text-align:center;
+}
+
+#catering {
+    background:var(--secondary-color);
+}
+
+#submit-catering {
+    text-align:center;
+    padding-bottom:2%;
+}
+
+#vendors, #careers {
+    margin:5%;
+    align-items:center;
+}
+
+#farm-text, #supplier-text {
+    padding:3%;
+}
+
+#job-app-form {
+    padding:3% 0 5% 25%;
+    border-bottom:solid 1px var(--quaternary-color);
+}
+
+#job-desc {
+    padding:5%;
+    margin:5%;
+    border:solid 1px var(--quaternary-color);
+}
+
+#find-location {
+    text-align:center;
+    padding:3% 0;
+}
+
+footer {
+    background:var(--primary-color);
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+footer div:not(:last-child) {
+    border-right:solid 3px #fff;
+}
+
+/* Forms */
+#job-app-form form {
+    font-size:200%;
+}
+
+#job-app-form input {
+    font-size:0.75em;
+}
+
+#job-app-form input:not(:last-child) {
+    width:55%;
+}
+
+#find-location input {
+    font-size:1.35em;
+    width:60%;
+}
+
+.mini-menu select {
+    font-size:0.7em;
+    margin-bottom:5%;
+}
+
+#submit-catering input {
+    font-size:1em;
+}
+
+/* Navigation */
+ul {
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+}
+
+#small-toggle-nav {
+    background:var(--quaternary-color);
+    padding:10px;
+}
+
+#small-toggle-nav div {
+    width:5%;
+    height:5px;
+    background-color:var(--tertiary-color);
+    margin:1% 0;
+}
+
+#nav-items {
+    background:var(--primary-color);
+    color:#fff;
+    text-align:center;
+}
+
+#main-nav li {
+    padding:25px;
+    border-top:solid 1px #fff;
+}
+
+#main-nav a {
+    padding:15px;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+#main-nav a:hover {
+    background-color:var(--quinary-color);
+    border-radius:10px;
+    transition:0.2s;
+}
+
+/* Flex */
+.special-columns {
+    display:flex;
+}
+
+.one {
+        flex:1;
+}
+
+.two {
+    flex:2;
+}
+
+.three {
+    flex:3;
+}
+
+.four {
+    flex:4;
+}
+
+.five {
+    flex:5;
+}
+
+.six {
+    flex:6;
+}
+
+.seven {
+    flex:7;
+}
+
+/* Classes */
+.menu-section {
+    background:var(--secondary-color);
+    border:solid 1px var(--primary-color);
+    padding:1% 3%;
+}
+
+.menu-item {
+    align-items:center;
+    margin-bottom:15%;
+}
+
+.menu-item-text {
+    align-items:center;
+}
+
+.menu-item-text-top {
+    font-size:200%;
+}
+
+.menu-item-text-bottom {
+    font-size:80%;
+}
+
+.incr-decr {
+    align-self:center;
+}
+
+.oval {
+    background:var(--quaternary-color);
+    border:solid 1px var(--quaternary-color);
+    border-radius:50%;
+    color:#fff;
+    text-align:center;
+    width:45%;
+    padding:20px;
+    margin:20px auto;
+}
+
+.mini-menu {
+    color:#000;
+    margin:5% auto;
+    background:var(--tertiary-color);
+    padding:1% 3.5%;
+    width:40%;
+    border-radius:25px;
+    font-size:130%;
+}
+
+.previews {
+    margin:5%;
+}
+
+.item-img {
+    padding:7%;
+}
+
+.hide-small {
+    display:none;
+}
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+#slideshow-logo img {
+    width:35%;
+    border-radius:50%;
+    border:none;
+}
+
+#compass-icon {
+    width:10%;
+    padding-left:10px;
+}
+
+#map-img {
+    border:solid 1px #000;
+    border-top:none;
+}
+
+#about-imgs div {
+    margin:0 5px;
+}
+
+#job-img {
+    padding:2.5%;
+}
+
+#farm-map, #delivery-truck {
+    text-align:center;
+}
+
+#farm-map img {
+    width:50%;
+}
+
+#delivery-truck img {
+    margin-top:30px;
+    width:85%;
+}
+
+/* Table */
+#hours-table {
+    width:100%;
+    border-collapse:collapse;
+    background:var(--tertiary-color);
+    border-radius:20px;
+}
+
+#hours-table tr:not(:last-child) {
+    border-bottom:solid 1.5px #000;
+}
+
+#hours-table td {
+    margin:0;
+    font-size:2em;
+    padding:3% 5%;
+}
+
+#hours-table tr td:last-child {
+    text-align:right;
+}
+
+/* Buttons */
+#btn-order-now {
+    margin-top:5%;
+    font-size:2.5em;
+    font-weight:bold;
+    padding:5% 20%;
+    background:linear-gradient(to top, var(--quinary-color) 50%, var(--primary-color) 50%);
+    background-size:100% 200%;
+    background-position:0 100%;
+    transition:all 0.2s ease-in-out;
+    overflow:hidden;
+    color:#fff;
+    border:none;
+    border-radius:15px;
+}
+
+#btn-order-now:hover {
+    background-position:0 0;
+}
+
+.menu-item-text button {
+    height:fit-content;
+    font-size:100%;
+    align-self:center;
+}
+
+.incr-decr button {
+    background:#fff;
+    border:solid 1px var(--quaternary-color);
+    border-radius:3px;
+    width:40px;
+    height:40px;
+    padding:5px;
+}
+
+/* Typography */
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+#map-header h3 {
+    text-align:right;
+    padding-right:10px;
+    font-size:1.5em;
+}
+
+#home-header h1 {
+    margin-top:5%;
+    margin-bottom:0;
+}
+
+#home h2 {
+    text-align:center;
+    padding:25px;
+    background:var(--quaternary-color);
+    color:#fff;
+    border-radius:20px;
+}
+
+#home-text p:last-child {
+    text-align:center;
+}
+
+#about-text h2, #vendors h2, #job-desc h2, .menu-section h1, 
+    .item-info-text h2, #home-header h1 {
+    text-align:center;
+}
+
+#vendors h2 {
+    margin-bottom:7%;
+}
+
+.menu-section h1 {
+    font-size:200%;
+    margin:5%;
+}
+
+.menu-item-text-top h4:last-child {
+    text-align:right;
+}
+
+.menu-item-text-bottom p {
+    margin-top:0;
+}
+
+.incr-decr span {
+    margin:0 25px;
+}
+
+#catering {
+    font-size:150%;
+}
+
+.mini-menu p:first-child {
+    margin-bottom:15px;
+}
+
+.mini-menu h6 {
+    margin:0;
+    text-indent:30px;
+}
+
+.item-info-text h3 {
+    border:solid 1px var(--quaternary-color);
+    border-bottom:none;
+    padding:1.5%;
+    margin:0 5%;
+    margin-top:5%;
+}
+
+.item-info-text p {
+    border:solid 1px var(--quaternary-color);
+    padding:3%;
+    margin:0 5%;
+}
+
+/* Resolution */
+@media only screen and (orientation:landscape) {
+    /* Structure */
+    #home {
+        margin:2.5%;
+        margin-top:1%;
+    }
+
+    #home-text {
+        padding:3% 7%;
+    }
+
+    #about-text {
+        padding:3%;
+    }
+
+    #careers {
+        margin:3%;
+    }
+
+    #job-app-form {
+        padding:3%;
+        border-bottom:none;
+        border-right:solid 1px var(--quaternary-color);
+    }
+
+    #job-desc {
+        padding:3%;
+        margin:0;
+        margin-left:5%;
+    }
+
+    /* Forms */
+    #job-app-form form, #job-app-form input, #find-location input, 
+    .mini-menu select {
+        font-size:initial;
+    }
+
+    #job-app-form input:not(:last-child, #resume) {
+        width:95%;
+    }
+
+    .mini-menu select {
+        width:100%;
+    }
+
+    /* Navigation */
+    #small-toggle-nav {
+        display:none;
+    }
+
+    #main-nav li {
+        border-top:none;
+    }
+
+    /* Flex */
+    .columns {
+        display:flex;
+    }
+
+    /* Classes */
+    .menu-section {
+        padding:1.5%;
+    }
+
+    .menu-item {
+        margin:15px 0;
+    }
+
+    .menu-item-img {
+        margin-right:4%;
+    }
+
+    .oval {
+        width:75%;
+    }
+
+    .mini-menu {
+        padding:1.5% 5%;
+        width:75%;
+    }
+
+    .previews {
+        align-items:center;
+    }
+
+    .item-img {
+        padding:0;
+    }
+    
+    /* Images */
+    #slideshow-logo img {
+        width:20%;
+    }
+
+    #about-imgs div {
+        margin-right:5px;
+    }
+
+    #about-imgs div:first-child {
+        margin-top:3px;
+    }
+
+    #delivery-truck img {
+        margin-top:10px;
+    }
+
+    /* Table */
+    #hours-table td {
+        font-size:100%;
+        padding:5%;
+    }
+
+    /* Buttons */
+    .menu-item-text button {
+        font-size:65%;
+    }
+
+    .incr-decr button {
+        width:25px;
+        height:25px;
+        padding:0;
+    }
+
+    /* Typography */
+    #map-header h3, .menu-item-text-top,
+    .menu-item-text-bottom, #catering, .menu-item-text-bottom, #btn-order-now {
+        font-size:100%;
+    }
+
+    .menu-section h1 {
+        font-size:150%;
+        margin:2%;
+    }
+
+    .mini-menu p:first-child {
+        margin-bottom:10px;
+    }
+}

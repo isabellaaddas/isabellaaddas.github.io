@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--Ezra Addas, CSCE 242-->
+
+<html lang="en">
+    <head>
+        <title>T & Z Deli</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div id="slideshow-logo">
+                    <div id="logo"><a href="index.html"><img src="images/deli-logo.png"></a></div>
+                </div>
+
+                <div id="small-toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+                <nav id="main-nav">
+                    <ul id="nav-items" class="columns hide-small">
+                        <li class="one"><a href="about-us.html">About Us</a></li>
+                        <li class="one"><a href="order.html">Order</a></li>
+                        <li class="one"><a href="catering.html">Catering</a></li>
+                        <li class="one"><a href="careers.html">Careers</a></li>
+                        <li class="one"><a href="our-vendors.html">Our Vendors</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div id="catering">
+                    <div id="find-location">
+                        <h1>Find Catering Location</h1>
+
+                        <input id="cater-location" name="cater-location" type="search" placeholder="Enter location (address, zip code, etc.)">
+                    </div>
+
+                    <div id="catering-menu" class="columns">
+                        <div id="sandwiches" class="one">
+                            <div class="oval">
+                                <h2>SANDWICHES</h2>
+                            </div>
+
+                            <div class="mini-menu">
+                                <p>20 CT TRAYS ...... $109.99</p>
+                                <p>30 CT TRAYS ...... $159.99</p>
+                                <p>50 CT TRAYS ...... $349.99</p>
+                                
+                                <select id="s-sandwiches" name="s-sandwiches">
+                                    <option value="" disabled selected hidden>Sandwich Type</option>
+                                    <option value="naples" name="naples">Naples Style</option>
+                                    <option value="sicilian" name="sicilian">Sicilian Blend</option>
+                                    <option value="calabrese" name="calabrese">Calabrese Special</option>
+                                    <option value="tuscan" name="tuscan">Tuscan Village</option>
+                                    <option value="korean" name="korean">Korean Meatball</option>
+                                    <option value="roman" name="roman">Roman Ruins</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="soups" class="one">
+                            <div class="oval">
+                                <h2>SOUPS</h2>
+                            </div>
+
+                            <div class="mini-menu">
+                                <p>1 POT ...... $69.99</p>
+                                <h6>*Feeds 10</h6>
+                                <p>3 POTS ...... $189.99</p>
+                                <p>5 POTS ...... $279.99</p>
+                                
+                                <select id="s-soups" name="s-soups">
+                                    <option value="" disabled selected hidden>Soup Type</option>
+                                    <option value="wedding" name="wedding">Italian Wedding</option>
+                                    <option value="minestrone" name="minestrone">Minestrone</option>
+                                    <option value="seaweed" name="seaweed">Seaweed</option>
+                                    <option value="ribollita" name="ribollita">Ribollita</option>
+                                    <option value="fagioli" name="fagioli">Pasta e Fagioli</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="salads" class="one">
+                            <div class="oval">
+                                <h2>SALADS</h2>
+                            </div>
+
+                            <div class="mini-menu">
+                                <p>1 TIN ...... $79.99</p>
+                                <h6>*Feeds 10</h6>
+                                <p>3 TINS ...... $209.99</p>
+                                <p>5 TINS ...... $319.99</p>
+                                
+                                <select id="s-salads" name="s-salads">
+                                    <option value="" disabled selected hidden>Salad Type</option>
+                                    <option value="caprese" name="caprese">Caprese</option>
+                                    <option value="artichokes" name="artichokes">Artichokes and Bottarga</option>
+                                    <option value="rice" name="rice">Rice Salad</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="desserts" class="one">
+                            <div class="oval">
+                                <h2>DESSERTS</h2>
+                            </div>
+
+                            <div class="mini-menu">
+                                <p>CAKE OF CHOICE ...... $89.99</p>
+                                <p>TIRAMISU ...... $69.99</p>
+                                <p>GELATO ...... $99.99</p>
+                                <p>COOKIE PLATTER ...... $69.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="submit-catering"><input type="submit" value="Submit Catering Order"></div>
+                </div>
+            </main>
+
+            <footer class="special-columns">
+                <div id="footer-contact" class="one"><h4>Contact Us</h4></div>
+                <div id="footer-info1" class="one"><h4>(973) 207-3474</h4></div>
+                <div id="footer-info2" class="one"><h4>teezeedeli@company.com</h4></div>
+            </footer>
+        </div>
+
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>

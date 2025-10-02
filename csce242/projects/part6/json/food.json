@@ -1,0 +1,20 @@
+[{
+    "_id": 1,
+    "name": "Naples Style",
+    "price": "11.99",
+    "description": "A classic panuozzo (\"pizza sandwich\") full of the familiar flavors of prosciutto and parmesan.",
+    "ingredients": [
+        "homemade dough (baked daily)",
+        "prosciutto",
+        "grated parmigiano reggiano",
+        "sliced provolone",
+        "arugula",
+        "drizzle of olive oil"
+    ],
+    "allergens": [
+        "gluten",
+        "pork",
+        "dairy"
+    ],
+    "img":"neapolitan-style.jpg"
+}]
