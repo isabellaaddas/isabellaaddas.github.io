@@ -270,7 +270,7 @@ footer p {
 /* Dogs */
 
 .dog {
-  background-color: dodgerblue;
+  background-color: var(--gallery-color);
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
@@ -278,12 +278,27 @@ footer p {
   width:40%;
 }
 
+.dog a {
+    padding-left:20px;
+    color:#2B91AD;
+    text-decoration: none;
+}
+
 .dog img {
-    max-width:50%;
+    max-width:80%;
 }
 
 .transparent {
     visibility:hidden;
+}
+
+.shoe {
+  background-color: var(--gallery-color);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  width:40%;
 }
 
 
@@ -334,6 +349,8 @@ footer p {
   }
   
 }
+
+
 
 
 /* Larger screens */

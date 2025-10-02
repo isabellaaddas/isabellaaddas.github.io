@@ -1,6 +1,7 @@
 [{
     "_id": 1,
     "name": "Naples Style",
+    "category": "sandwich",
     "price": "11.99",
     "description": "A classic panuozzo (\"pizza sandwich\") full of the familiar flavors of prosciutto and parmesan.",
     "ingredients": [
