@@ -39,7 +39,7 @@ const showFood = async() => {
 
         // img - image div
         const img = document.createElement("img");
-        img.src = `../../projects/json/images/${order.img}`
+        img.src = `../json/images/${order.img}`;
         imageA.append(img);
 
         // Inner div for text
@@ -121,8 +121,6 @@ const showFood = async() => {
         } else if (order.category == "dessert") {
             dessertDiv.append(item);
         }
-
-        console.log("added");
     });
 };
 
