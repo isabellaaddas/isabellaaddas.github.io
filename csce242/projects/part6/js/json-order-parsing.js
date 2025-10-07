@@ -121,6 +121,8 @@ const showFood = async() => {
         } else if (order.category == "dessert") {
             dessertDiv.append(item);
         }
+
+        console.log("added");
     });
 };
 
