@@ -6,7 +6,7 @@ const getFood = async() => {
         return response.json();
     }
     catch (error) {
-        console.log("sorry");
+        document.getElementById("load-error").classList.remove("hidden");
     }
 };
 

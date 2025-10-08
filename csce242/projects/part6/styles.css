@@ -49,6 +49,16 @@ body {
     text-align:center;
 }
 
+#load-error {
+    text-align:center;
+    padding:5px;
+    background-color:#fff;
+    width:80%;
+    margin:auto;
+    margin-bottom:5%;
+    font-size:135%;
+}
+
 #catering {
     background:var(--secondary-color);
 }
@@ -257,6 +267,10 @@ ul {
     display:none;
 }
 
+.hidden {
+    display:none;
+}
+
 /* Images */
 img {
     max-width:100%;
@@ -394,6 +408,11 @@ a {
     margin-bottom:7%;
 }
 
+#load-error a {
+    text-decoration:underline;
+    color:var(--primary-color);
+}
+
 .menu-section h1 {
     font-size:200%;
     margin:5%;
@@ -452,6 +471,10 @@ a {
 
     #about-text {
         padding:3%;
+    }
+
+    #load-error {
+        margin-bottom:3%;
     }
 
     #careers {
@@ -563,8 +586,8 @@ a {
     }
 
     /* Typography */
-    #map-header h3, .menu-item-text-top,
-    .menu-item-text-bottom, #catering, .menu-item-text-bottom, #btn-order-now {
+    #map-header h3, .menu-item-text-top, .menu-item-text-bottom, #catering, 
+    .menu-item-text-bottom, #btn-order-now, #load-error {
         font-size:100%;
     }
 
