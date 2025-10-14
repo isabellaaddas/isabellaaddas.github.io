@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--Ezra Addas, CSCE 242-->
+
+<html lang="en">
+    <head>
+        <title>T & Z Deli</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div id="slideshow-logo">
+                    <div id="logo"><a href="index.html"><img src="images/deli-logo.png"></a></div>
+                </div>
+
+                <div id="small-toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+                <nav id="main-nav">
+                    <ul id="nav-items" class="columns hide-small">
+                        <li class="one"><a href="about-us.html">About Us</a></li>
+                        <li class="one"><a href="order.html">Order</a></li>
+                        <li class="one"><a href="catering.html">Catering</a></li>
+                        <li class="one"><a href="careers.html">Careers</a></li>
+                        <li class="one"><a href="our-vendors.html">Our Vendors</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div id="careers" class="columns">
+                    <div id="job-app-form" class="one">
+                        <form>
+                            <label for="full-name">Enter full name:</label><br>
+                            <input type="text" id="full-name" name="full-name"><br><br>
+
+                            <label for="email">Enter e-mail:</label><br>
+                            <input type="email" id="email" name="email"><br><br>
+
+                            <label for="resume">Attach resume (optional)</label><br>
+                            <input type="file" id="resume" name="resume"><br><br>
+
+                            <label for="applicant-info">Enter skills and availability:</label><br>
+                            <textarea id="applicant-info" name="applicant-info" cols="50" rows="8"></textarea><br><br>
+
+                            <input type="submit" value="Submit Application">
+                        </form>
+                    </div>
+
+                    <div id="job-desc" class="two">
+                        <h2>Job Description</h2>
+
+                        <div id="job-img"><img src="images/job-example.jpg"></div>
+
+                        <p>Working at T & Z Deli entails a strong commitment to serving the community and delivering the best quality to every customer who walks in. Our employees will be trained in every area of the store (with exceptions for minors). Any employee should be able to reasonably lift at least 20lbs for deliveries and inventory changes. All employees will be able to make any kind of sandwich fit to our standard of taste; any employee should also have customer service skills for any customer-facing position they might fill. Everyone who works for us becomes a part of the T & Z crew, treated like family even after they move on. Employees get paid weekly for convenience.</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="special-columns">
+                <div id="footer-contact" class="one"><h4>Contact Us</h4></div>
+                <div id="footer-info1" class="one"><h4>(973) 207-3474</h4></div>
+                <div id="footer-info2" class="one"><h4>teezeedeli@company.com</h4></div>
+            </footer>
+        </div>
+
+        <script src="js/toggle-nav.js"></script>
+    </body>
+</html>
