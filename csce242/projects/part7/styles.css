@@ -93,6 +93,10 @@ body {
     padding:3% 0;
 }
 
+#contact {
+    margin:auto;
+}
+
 footer {
     background:var(--primary-color);
     color:#fff;
@@ -216,6 +220,14 @@ ul {
 .menu-item {
     align-items:center;
     margin-bottom:15%;
+    background:var(--quinary-color);
+    padding:3%;
+    box-shadow:8px 8px 5px #000;
+}
+
+.menu-item:hover {
+    transition:0.25s ease;
+    transform:translateY(-5px);
 }
 
 .menu-item-text {
@@ -527,7 +539,8 @@ a {
     }
 
     .menu-item {
-        margin:15px 0;
+        margin:5% 0;
+        padding:1.5%;
     }
 
     .menu-item-img {
