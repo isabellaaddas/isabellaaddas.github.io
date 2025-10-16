@@ -9,7 +9,7 @@ document.getElementById("contact-form").onsubmit = (event) => {
     // (due to asynchronous tasks being run)
     const form = event.currentTarget;
 
-    result.innerHTML = "Please wait...";
+    result.innerHTML = "Sending message...";
 
     fetch("https://api.web3forms.com/submit", {
             method: 'POST',
@@ -22,7 +22,7 @@ document.getElementById("contact-form").onsubmit = (event) => {
         .then(async (response) => {
             let json = await response.json();
             if (response.status == 200) {
-                result.innerHTML = "Email sent! Expect response within normal business hours.";
+                result.innerHTML = "Email sent! Expect a response within normal business hours.";
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
@@ -30,7 +30,7 @@ document.getElementById("contact-form").onsubmit = (event) => {
         })
         .catch(error => {
             console.log(error);
-            result.innerHTML = "Something went wrong!";
+            result.innerHTML = "Something went wrong.";
         })
         .then(function() {
             form.reset();

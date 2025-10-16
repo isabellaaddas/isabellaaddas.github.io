@@ -121,6 +121,17 @@ footer div:not(:last-child) {
     width:55%;
 }
 
+#contact-form {
+    margin:5% auto;
+    font-size:200%;
+    width:fit-content;
+}
+
+#contact-form input, #contact-form button, #contact-form textarea {
+    font-size:100%;
+    margin-top:15px;
+}
+
 #find-location input {
     font-size:1.35em;
     width:60%;
@@ -310,6 +321,13 @@ img {
 
 #job-img {
     padding:2.5%;
+}
+
+#contact-img {
+    width:75%;
+    margin:auto;
+    margin-bottom:15px;
+    margin-top:10%;
 }
 
 #farm-map, #delivery-truck {
@@ -507,8 +525,13 @@ a {
 
     /* Forms */
     #job-app-form form, #job-app-form input, #find-location input, 
-    .mini-menu select {
+    .mini-menu select, #contact-form, #contact-form input, #contact-form button {
         font-size:initial;
+    }
+
+    #contact-form {
+        margin-top:5%;
+        margin-left:5%;
     }
 
     #job-app-form input:not(:last-child, #resume) {
@@ -575,6 +598,17 @@ a {
 
     #about-imgs div:first-child {
         margin-top:3px;
+    }
+
+    #contact-img {
+        margin:auto;
+        margin-top:3px;
+        padding:10px;
+        text-align:center;
+    }
+
+    #contact-img img {
+        width:80%;
     }
 
     #delivery-truck img {
