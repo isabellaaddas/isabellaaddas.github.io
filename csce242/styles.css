@@ -36,17 +36,19 @@ img {
     max-width:100%;
 }
 
+li img {
+    width:30%;
+}
+
 /* Classes */
 .assignments {
     background:#bdf26d;
-    width:75%;
     margin:20px auto;
     text-align:center;
 }
 
 .project {
     background:#FCF67E;
-    width:75%;
     margin:20px auto;
     text-align:center;
 }
