@@ -10,7 +10,7 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:peachpuff;
+    background:var(--sixth);
 }
 
 /* Classes */
@@ -22,28 +22,6 @@ body {
   background:var(--second);
 }
 
-.about {
-    text-align:center;
-    color:blue;
-}
-
-.projects {
-    background:aqua;
-}
-
 /* Text */
-p {
-    text-align:center;
-    color:red;
-}
-
-#header {
-    color:green;
-}
-
-#para1 {
-    text-align:center;
-    color:blue;
-}
 
 /* Resolution */
