@@ -10,13 +10,13 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:var(--sixth);
+    background:#fff;
 }
 
 /* Classes */
 /* Hexagon from --> https://css-shape.com/hexagon/ */
 .hexagon {
-  height: 200px; /* adjust to control the size  */
+  height: 200px;
   aspect-ratio: 1/cos(30deg);
   clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
   background:var(--second);
