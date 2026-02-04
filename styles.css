@@ -9,10 +9,19 @@
   background: #3B8686;
 }
 
+.about {
+    text-align:center;
+    color:blue;
+}
+
 /* Text */
 p {
     text-align:center;
     color:red;
+}
+
+#header {
+    color:green;
 }
 
 #para1 {
