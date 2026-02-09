@@ -1,23 +1,23 @@
 /* Structure */
 :root {
-    --first:#f07226;
-    --second:#f0b026;
-    --third:#f09526;
-    --fourth:#f04f26;
-    --fifth:#f0c826;
-    --sixth:#f0c189;
+    --first:#8c1b24;
+    --second:#0a0d08;
+    --third:#f2f0d8;
+    --fourth:#8c582a;
+    --fifth:#260101;
+    --bubble-font:'Bagel Fat One';
 }
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:#fff;
-    text-align:center;
+    background:var(--third);
+    margin:0;
 }
 
 header {
-    background:var(--first);
-    color:white;
-    padding:2.5px;
+    color:var(--first);
+    font-family:var(--bubble-font);
+    padding-left:10px;
 }
 
 .projects div {
