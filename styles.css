@@ -15,9 +15,8 @@ body {
 }
 
 header {
-    color:var(--first);
-    font-family:var(--bubble-font);
     padding-left:10px;
+    font-family:var(--bubble-font);
 }
 
 .projects div {
@@ -32,12 +31,18 @@ header {
 }
 
 /* Classes */
-/* Hexagon from --> https://css-shape.com/hexagon/ */
-.hexagon {
-  height: 150px;
-  aspect-ratio: 1/cos(30deg);
-  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
-  background:var(--second);
+.about, .skills, .projects, footer {
+    padding:10px;
+    padding-left:20px;
+}
+
+.about, .projects {
+    background:var(--first);
+    color:var(--third);
+}
+
+.skills, footer, header {
+    color:var(--first);
 }
 
 .project {
@@ -47,5 +52,9 @@ header {
 }
 
 /* Text */
+a {
+    text-decoration:none;
+    color:inherit;
+}
 
 /* Resolution */
