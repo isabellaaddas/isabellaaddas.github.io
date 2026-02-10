@@ -22,7 +22,7 @@ header {
 .projects div {
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 .skills ul {
