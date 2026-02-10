@@ -70,6 +70,10 @@ img {
     max-width:100%;
 }
 
+#about-me-img img {
+    width:95%;
+}
+
 /* Text */
 a {
     text-decoration:none;
@@ -78,10 +82,6 @@ a {
 
 header h1 {
     text-align:center;
-}
-
-#about-me-text {
-    padding-left:15px;
 }
 
 /* Resolution */
