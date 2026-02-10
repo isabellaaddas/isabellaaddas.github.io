@@ -49,6 +49,9 @@ header {
     padding:35px;
     text-align:center;
     margin:15px;
+    background:var(--fifth);
+    border-radius:5px;
+    border:solid 2px var(--third);
 }
 
 /* Text */
