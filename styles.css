@@ -24,10 +24,6 @@ header {
     padding-left:0;
 }
 
-.projects div {
-    justify-content:space-evenly;
-}
-
 /* Classes */
 .about, .skills, .projects, footer {
     padding:10px 20px 20px 20px;
