@@ -39,7 +39,7 @@ header {
 }
 
 .project {
-    padding:35px;
+    padding:10px;
     text-align:center;
     margin:15px;
     background:var(--fifth);
@@ -63,6 +63,10 @@ img {
 
 #about-me-img img {
     width:50%;
+}
+
+.project img {
+    width:70%;
 }
 
 /* Text */
