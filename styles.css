@@ -47,15 +47,6 @@ header {
     border:solid 2px var(--third);
 }
 
-/* Flex */
-.flex {
-    display:flex;
-}
-
-.wrap {
-    flex-wrap:wrap;
-}
-
 /* Images */
 img {
     max-width:100%;
@@ -81,11 +72,17 @@ a {
         width:95%;
     }
 
-    .one {
-        flex:1;
+    /* Flex */
+    .flex {
+        display:flex;
+        justify-content:space-evenly;
     }
 
-    .two {
-        flex:2;
+    .wrap {
+        flex-wrap:wrap;
+    }
+
+    .quarter {
+        width:25%;
     }
 }
