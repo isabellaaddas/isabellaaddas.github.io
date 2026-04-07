@@ -72,6 +72,10 @@ a {
         width:95%;
     }
 
+    #prototype {
+        font-size:80%;
+    }
+
     /* Flex */
     .flex {
         display:flex;
