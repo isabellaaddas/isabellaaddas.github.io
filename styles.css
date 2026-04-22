@@ -20,8 +20,8 @@ header {
 }
 
 .skills ul {
-    list-style:none;
-    padding-left:0;
+    list-style:square;
+    padding-left:15px;
 }
 
 /* Classes */
@@ -47,6 +47,11 @@ header {
     border:solid 2px var(--third);
 }
 
+.scroll {
+    overflow:auto;
+    height:275px;
+}
+
 /* Images */
 img {
     max-width:100%;
@@ -62,17 +67,13 @@ img {
 
 /* Text */
 a {
-    text-decoration:none;
+    text-decoration:underline;
     color:inherit;
 }
 
 /* Resolution */
 @media only screen and (orientation:landscape) {
-    #about-me-img img {
-        width:95%;
-    }
-
-    #prototype {
+    #prototype p {
         font-size:80%;
     }
 
